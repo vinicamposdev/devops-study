@@ -19,4 +19,7 @@ spec:
           image: "vinicamposdev/hello-go:v2"
           env:
             - name: SERVER_NAME
-              value: "hello-go"
+              valueFrom:
+                configMapKeyRef:
+                  name: goserver-env
+                  key: SERVER_NAME

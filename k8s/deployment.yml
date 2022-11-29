@@ -20,3 +20,15 @@ spec:
           envFrom:
             - configMapRef:
                 name: goserver-env
+          volumeMounts:
+            - mountPath: "/go/myfamily"
+              name: config
+              readOnly: true
+      volumes:
+        - name: config
+          configMap:
+            name: configmap-family
+            items:
+            - key: members
+              path: "family.txt"
+        

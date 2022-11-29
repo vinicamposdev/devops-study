@@ -16,4 +16,7 @@ spec:
     spec:
       containers:
         - name: goserver
-          image: "vinicamposdev/hello-go:latest"
+          image: "vinicamposdev/hello-go:v2"
+          env:
+            - name: SERVER_NAME
+              value: "hello-go"

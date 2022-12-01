@@ -3,7 +3,11 @@
 # File = Provider Type
 
 resource "local_file" "example" {
-  content = "foo"
+  content = var.content
   filename = "example.txt" 
 }
 
+variable "content" {
+  type = string
+  default = "hello world"
+}

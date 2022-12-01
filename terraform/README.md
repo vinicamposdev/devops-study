@@ -1,0 +1,40 @@
+# terraform
+Created: 2022-11-30 22:11
+
+ - provisioning infrastructure
+	 - get all components
+		 - server
+		 - databases
+		 - vpc 
+		 - security groups
+		 - subnet
+		 - internet gateways
+	 - create then in the cloud providers
+		 - multi cloud
+		 - [registry](https://registry.terraform.io/)
+		 - modules
+ - open source
+	 - has many providers
+		 - aws
+		 - azure
+		 - gpc
+		 - kubernetes
+ - idempotence
+	 - ensure resource not create more than once
+	 - if some aspect of resource changes, change just the update part
+	 - action plan
+		 - store all state in a file
+		 - describe current state
+		 - if there is not, it will create all from zero
+		 - if using in a team, store it in a cdn bucket, like s3
+ - imperativity
+	 - execute code just the final result
+	 - if the final result is reach, execute nothing
+ - declarativity
+	 - not tell final step
+	 - just get step by step
+ - they not ensure well enought the idempotence in setups
+ - Philosofy (warcry)
+	 - Write, Plan, Apply
+ - Ansible
+	 - automation configuration management

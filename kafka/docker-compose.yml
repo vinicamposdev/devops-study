@@ -4,6 +4,7 @@ services:
 
   zookeeper:
     image: confluentinc/cp-zookeeper:latest
+    platform: linux/amd64
     environment:
       ZOOKEEPER_CLIENT_PORT: 2181
     extra_hosts:
@@ -11,6 +12,7 @@ services:
 
   kafka:
     image: confluentinc/cp-kafka:6.0.0
+    platform: linux/amd64
     depends_on:
       - zookeeper
     ports:
@@ -29,6 +31,7 @@ services:
 
   control-center:
     image: confluentinc/cp-enterprise-control-center:6.0.0
+    platform: linux/amd64
     hostname: control-center
     depends_on:
       - kafka

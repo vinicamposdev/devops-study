@@ -4,6 +4,7 @@ services:
   app:
     build: .
     container_name: gokafka
+    platform: linux/amd64
     volumes:
       - .:/go/src/
     extra_hosts:

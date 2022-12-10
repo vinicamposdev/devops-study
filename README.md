@@ -16,3 +16,7 @@ Check out the [aws notes](aws/README.md)
 ## Ansible
 
 Check out the [ansible notes](ansible/README.md)
+
+## Kafka
+
+Check out the [kafka notes](apache-kafka/kafka/README.md) and [kafka connect notes](apache-kafka/kafka-connect/README.md)

@@ -193,6 +193,7 @@ fabric.properties
 
 # AWS credentials
 *.pem
+*.cer
 
 # Ansible hosts
 hosts

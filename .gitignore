@@ -1,8 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/terraform,ansible,macos,go
-# Edit at https://www.toptal.com/developers/gitignore?templates=terraform,ansible,macos,go
-
-### Ansible ###
-*.retry
+# Created by https://www.toptal.com/developers/gitignore/api/go,macos,terraform
+# Edit at https://www.toptal.com/developers/gitignore?templates=go,macos,terraform
 
 ### Go ###
 # If you prefer the allow list template instead of the deny list, see community template:
@@ -96,8 +93,7 @@ override.tf.json
 .terraformrc
 terraform.rc
 
-# End of https://www.toptal.com/developers/gitignore/api/terraform,ansible,macos,go
-
+# End of https://www.toptal.com/developers/gitignore/api/go,macos,terraform
 # Created by https://www.toptal.com/developers/gitignore/api/goland+all
 # Edit at https://www.toptal.com/developers/gitignore?templates=goland+all
 

@@ -24,3 +24,7 @@ Check out the [kafka notes](apache-kafka/kafka/README.md) and [kafka connect not
 ## Elastic
 
 Check out the [elastic notes](elastic/README.md)
+
+## Prometheus
+
+Check out the [prometheus notes](prometheus/README.md)

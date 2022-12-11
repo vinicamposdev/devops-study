@@ -5,7 +5,7 @@ terraform {
       local = ">=2.1.0"
     }
     backend "s3" {
-      bucket = "myfcbucket"
+      bucket = "mybucket"
       key    = "terraform.tfstate"
       region = "us-east-1"
     }

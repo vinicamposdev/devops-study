@@ -1,0 +1,72 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: servicex
+spec:
+  selector:
+    matchLabels:
+      app: servicex
+  template:
+    metadata:
+      labels:
+        app: servicex
+        version: "200"
+    spec:
+      containers:
+      - name: servicex
+        image: vinicamposdev/circuit-breaker-example-go:latest
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "250m"
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8000
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: servicex-error
+spec:
+  selector:
+    matchLabels:
+      app: servicex
+  template:
+    metadata:
+      labels:
+        app: servicex
+        version: "504"
+    spec:
+      containers:
+      - name: servicex
+        image: vinicamposdev/circuit-breaker-example-go:error-504
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "250m"
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8000
+        env:
+          - name: error
+            value: "yes"
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: servicex-service
+spec:
+  type: ClusterIP
+  selector:
+    app: servicex 
+  ports:
+  - port: 80
+    targetPort: 8000

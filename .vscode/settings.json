@@ -1,0 +1,10 @@
+{
+    "conventionalCommits.scopes": [
+        "ansible",
+        "aws",
+        "istio",
+        "k8s",
+        "kafka",
+        "terraform"
+    ]
+}

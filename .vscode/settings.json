@@ -6,6 +6,7 @@
         "k8s",
         "kafka",
         "otel",
-        "terraform"
+        "terraform",
+        "elastic"
     ]
 }

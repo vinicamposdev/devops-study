@@ -5,6 +5,7 @@
         "istio",
         "k8s",
         "kafka",
+        "otel",
         "terraform"
     ]
 }

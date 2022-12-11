@@ -20,3 +20,7 @@ Check out the [ansible notes](ansible/README.md)
 ## Kafka
 
 Check out the [kafka notes](apache-kafka/kafka/README.md) and [kafka connect notes](apache-kafka/kafka-connect/README.md)
+
+## Elastic
+
+Check out the [elastic notes](elastic/README.md)
